@@ -1,3 +1,4 @@
 {
-  "mongoURI": "mongodb+srv://juli123:juli123@devnator-quk5t.mongodb.net/test?retryWrites=true&w=majority"
+  "mongoURI": "mongodb+srv://juli123:juli123@devnator-quk5t.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtSecret": "CosmicChulio"
 }
