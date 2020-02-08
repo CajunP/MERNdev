@@ -1,4 +1,6 @@
 {
   "mongoURI": "mongodb+srv://juli123:juli123@devnator-quk5t.mongodb.net/test?retryWrites=true&w=majority",
-  "jwtSecret": "CosmicChulio"
+  "jwtSecret": "CosmicChulio",
+  "githubClientId": "71f54a22803e199d4211",
+  "githubSecret": "c269310c01f21f2b4784b0d76318dc70f8d0fb39"
 }
