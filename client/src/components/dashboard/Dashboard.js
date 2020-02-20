@@ -3,17 +3,20 @@ import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import {Link} from 'react-router-dom';
 import {getCurrentProfile} from '../../actions/profile';
+import DashboardActions from './DashboardActions';
 import Spinner from '../layouts/Spinner';
 
 const Dashboard = ({getCurrentProfile, auth: {user}, profile: {profile, loading}}) => {
     useEffect(() => {
         getCurrentProfile();
-    }, []);
+    }, [getCurrentProfile]);
     return loading && profile == null ? <Spinner /> : <Fragment>
         <h1 className="large text-primary">Dashboard</h1>
         <p className="lead"><i className="fas fa-user"></i> Welcome {user && user.name}</p>
         {profile !== null ? (
-            <Fragment>has</Fragment>
+            <Fragment>
+                <DashboardActions />
+            </Fragment>
         ) : (
             <Fragment>
                 <p>You have no yet setup your profile please add some info</p>
